@@ -1,0 +1,644 @@
+@import "../variables-less/variables.less";
+
+
+.main,
+.main-page {
+  width: 100%;
+  font-size: 13px;
+  font-weight: 400;
+  color: @black;
+  background-color: @background-section1;
+}
+
+.actions__sales {
+  width: 90%;
+  display: block;
+  margin-bottom: 5px;
+  color: red;
+  margin-left: 7%;
+  font-size: 15px;
+}
+
+.section-one__image {
+  width: 100%;
+  height: 238px;
+  background-image: url("../../img/main-page/section1-image3.webp") ;
+  background-repeat: no-repeat;
+  background-size: 83%;
+  background-position: 100% 0;
+
+  &--safari {
+    background-image: url("../../img/main-page/section1-image.png")
+  }
+}
+
+.section-one__slogan {
+  display: block;
+  margin-left: 15px;
+  margin-right: 20px;
+  margin-bottom: 15px;
+  text-shadow: 0 10px 13px rgba(112, 139, 207, 0.36);
+  color: @font-color-important;
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 26.26px;
+  text-transform: uppercase;
+}
+
+.section-one__text {
+  display: block;
+  margin-left: 15px;
+  margin-right: 20px;
+  margin-bottom: 15px;
+}
+
+.section-one__text-attention {
+  display: block;
+  margin: 0 20px 20px 15px;
+  text-shadow: 0 10px 13px rgba(112, 139, 207, 0.36);
+  color: @font-color-important;
+  font-size: 14px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.button {
+  width: 90%;
+  height: 45px;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-bottom: 39px;
+  box-shadow: 0 10px 13px rgba(237, 109, 23, 0.36);
+  border-radius: 23px;
+  background-color: #f3f7ff;
+  background-image: @background-button;
+  outline: none;
+  border: none;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: uppercase;
+
+  &:hover {
+    background-image: @background-button-reverse;
+  }
+}
+
+//---------------------------------------------Section-two------------------------------------------------------------------------------
+
+.section-two {
+  background-color: @white;
+}
+
+.section__slogan {
+  display: block;
+  padding-top: 50px;
+  margin-left: 15px;
+  margin-bottom: 10px;
+  color: @font-color-important1;
+  font-size: 18px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.section__slogan-word {
+  display: block;
+  color: @black;
+}
+
+.section-two__make-choice {
+  margin-bottom: 30px;
+  background-image: url("../../img/main-page/pult.webp");
+  background-repeat: no-repeat;
+  background-position: 85% 50%;
+
+  &--safari {
+    background-image: url("../../img/main-page/pult.png");
+  }
+}
+
+.section__text {
+  display: block;
+  width: 83%;
+  margin-left: 15px;
+  margin-bottom: 15px;
+
+  &--make-choice{
+    width: 35%;
+    padding-left: 13px;
+  }
+
+  &--iptv {
+    text-transform: uppercase;
+    color: @font-color-important;
+    font-weight: 700;
+  }
+
+  &--slogan-iptv {
+    color: @font-color-important;
+    font-weight: 700;
+  }
+
+  &--section-four-iptv {
+    display: block;
+    margin-left: 5%;
+    margin-bottom: 15px;
+  }
+
+  &--attention {
+    color: @font-color-important1;
+    font-weight: 700;
+  }
+}
+
+.section-two__advantages-list {
+  list-style: none;
+  padding: 0 0 50px;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.section-two__advantages-item {
+  display: flex;
+  height: 110px;
+  margin-left: 10%;
+  margin-right: 10%;
+  flex-direction: row;
+  text-align: center;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  &--first {
+    background-image: url("../../img/icons/icon-1.svg");
+  }
+  &--second {
+    background-image: url("../../img/icons/icon-2.svg");
+  }
+  &--third {
+    background-image: url("../../img/icons/icon-3.svg");
+  }
+  &--fourth {
+    background-image: url("../../img/icons/icon-4.svg");
+  }
+  &--fifth {
+    background-image: url("../../img/icons/icon-5.svg");
+  }
+}
+
+.section-two__advantages-link {
+  display: block;
+  height: 100%;
+  align-self: flex-end;
+ }
+
+.section-two__advantages-link-text {
+  margin-top: 90px;
+  display: block;
+}
+
+//---------------------------------------------Section-three------------------------------------------------------------------------------
+
+.section-three {
+  background-image: url("../../img/main-page/background-section3.png");
+  background-repeat: no-repeat;
+  background-position: 117% 0;
+
+  &--safari {
+    //background-image: url("../../src/img/background-section3.webp");
+  }
+}
+
+.section__slogan-to-start-iptv {
+  margin-bottom: 30px;
+}
+
+.section-three__list,
+.section-four__list {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  padding: 0;
+  margin: 0 0 30px;
+  font-size: 18px;
+  font-weight: 400;
+}
+.section-three__list {
+  margin: 0;
+}
+
+.section-three__link,
+.section-four__link {
+  display: block;
+  min-height: 50px;
+  padding-left: 25%;
+  padding-top: 5px;
+  position: relative;
+  color: @black;
+  text-decoration: none;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 37px;
+    width: 35px;
+    height: 35px;
+    text-align: center;
+    font-size: 18px;
+    color: @white;
+    font-weight: 800;
+    line-height: 33px;
+    border-radius: 50%;
+    background-image: @background-button;
+  }
+}
+
+.section-three__link {
+  margin-bottom: 30px;
+}
+
+.section-three__link::after {
+  content: '';
+  position: absolute;
+  top: 45px;
+  left: 54px;
+  height: 20px;
+  width: 2px;
+  border: none;
+  background: @background-button;
+  background-size: 16px 2px, 100% 2px;
+ }
+
+.section-three__link--step3::after{
+  display: none;
+}
+
+.section-three__link {
+  &--step1::before {
+    content: '1';
+  }
+  &--step2::before {
+    content: '2';
+  }
+  &--step3::before {
+    content: '4';
+  }
+}
+
+.section__text-tarif {
+  display: block;
+  width: 70%;
+  padding-bottom: 30px;
+  margin-left: 7%;
+  font-size: 18px;
+  font-weight: 700;
+  color: #ffb027;
+  text-shadow: 0 10px 13px rgba(237, 109, 23, 0.36);
+}
+
+//---------------------------------------------Section-four------------------------------------------------------------------------------
+
+.section-four {
+  background-color: @white;
+}
+
+.section__slogan--section-four {
+  width: 90%;
+  margin: 0 auto 15px;
+}
+
+.section__slogan--section-four-satellite {
+  padding-top: 30px;
+  margin-bottom: 15px;
+  color: @black;
+}
+
+.section-four__list {
+   font-size: 13px;
+}
+
+.section-four__link {
+  padding-top: 0;
+  margin-bottom: 7px;
+  margin-right: 7%;
+  &::before {
+    content: "+";
+    font-size: 25px;
+    line-height: 33px;
+    text-align: center;
+    background-image: @background-before-iptv;
+  }
+
+  &--satellite {
+    margin-right: 10%;
+    &::before {
+      content: "";
+      background-image: @background-before-satellite;
+    }
+
+    &::after {
+      z-index: 1;
+      content: '';
+      position: absolute;
+      top: 16px;
+      left: 45px;
+      width: 20px;
+      height: 3px;
+      color: @white;
+      border-radius: 17%;
+      background-color: @white;
+    }
+  }
+}
+
+//---------------------------------------------Section-five------------------------------------------------------------------------------
+
+.section-five {
+  background-image: url("../../img/main-page/special-offers.png");
+  background-repeat: no-repeat;
+  background-position: 52% 23%;
+}
+
+.section__slogan--section-five {
+  padding-top: 10px;
+  text-align: center;
+  padding-bottom: 200px;
+}
+
+.section__text--section-five {
+  width: 57%;
+  margin: 0 auto 30px;
+  text-align: center;
+}
+
+//------------------------------------------------Desktop-----------------------------------------------------------------------------
+//------------------------------------------------Version------------------------------------------------------------------------------
+
+@media (min-width: @tablet-width) {
+  .section__container {
+    width: @desktop-width;
+    margin: 0 auto;
+  }
+
+  .section-one {
+    width: @desktop-width;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .section-one__description {
+    order: 0;
+  }
+
+  .section-one__image {
+    order: 1;
+    min-height: 755px;
+    background-image: url("../../img/main-page/section1-desktop.png");
+    background-position: 100% -125px;
+  }
+
+  .section-one__slogan {
+    width: 641px;
+    margin-left: 15%;
+    margin-top: 50px;
+    margin-bottom: 54px;
+    font-size: 48px;
+    line-height: 51px;
+  }
+
+  .section-one__text {
+    margin-left: 15%;
+    width: 636px;
+    font-size: 24px;
+  }
+
+  .section-one__text-attention {
+    margin-left: 15%;
+    margin-bottom: 50px;
+  }
+
+  .button {
+    width: 300px;
+    height: 60px;
+    margin-left: 15%;
+  }
+
+  //---------------------------------------------Desktop-Section-Two-------------------------------------------------------------------------------
+  .section-two__container {
+    background-image: url("../../img/main-page/pult-desktop.png");
+    background-repeat: no-repeat;
+    background-position: 100% 0;
+  }
+
+  .section-two__make-choice {
+    background-image: none;
+  }
+
+  .section__slogan {
+    margin-left: 7%;
+    margin-bottom: 30px;
+    font-size: 36px;
+    line-height: 39.05px;
+    text-shadow: 0 10px 13px rgba(112, 139, 207, 0.36);
+  }
+
+  .section__text {
+    margin-left: 7%;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 30px;
+  }
+
+  .section__text--section-two {
+    width: 545px;
+    margin-bottom: 39px;
+  }
+
+  .section__text--make-choice {
+    width: 545px;
+    padding-left: 0;
+  }
+
+  .section-two__advantages-list {
+    padding-bottom: 100px;
+    margin-left: 7%;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .section__text--internet {
+    margin-bottom: 39px;
+  }
+
+  .section-two__advantages-item {
+    height: 250px;
+    width: 200px;
+    margin: 0;
+    font-size: 16px;
+  }
+
+  .section-two__advantages-link {
+    width: 200px;
+  }
+
+  .section-two__advantages-link-text {
+    padding-top: 90px;
+  }
+
+
+  //---------------------------------------------Desktop-Section-Three-------------------------------------------------------------------------------
+
+  .section-three {
+    position: relative;
+  }
+
+  .section-three__container {
+    background-image: url("../../img/main-page/section3-desktop.png");
+    background-repeat: no-repeat;
+    background-position: 100% -84px;
+  }
+
+  .section__text--section3 {
+    width: 477px;
+  }
+
+  .actions__sales {
+    margin-bottom: 0;
+  }
+  .section__text-tarif {
+    font-size: 24px;
+    font-weight: 700;
+  }
+
+  .section__slogan-to-start-iptv {
+    margin-bottom: 41px;
+  }
+
+  .section-three__link,
+  .section-four__link {
+    padding-left: 200px;
+  }
+
+  .section-three__link::before,
+  .section-four__link::before {
+    left: 100px;
+    width: 45px;
+    height: 45px;
+    font-size: 19px;
+    line-height: 42px;
+  }
+
+  .section-three__link::after {
+    top: 51px;
+    left: 123px;
+  }
+
+  .button--section-three {
+    position: absolute;
+    left: 550px;
+    bottom: 150px;
+    width: 350px;
+  }
+
+  //---------------------------------------------Desktop-Section-Four-------------------------------------------------------------------------------
+
+  .section__slogan--section-four {
+    width: 570px;
+  }
+
+  .section-four__container-comparing {
+    display: flex;
+  }
+  .section__slogan--section-four-satellite {
+    padding: 0;
+    margin: 0;
+  }
+
+  .section-four__container-IPTV {
+    margin-right: 30px;
+  }
+
+  .section__text--section-four-iptv,
+  .section__slogan--section-four-satellite {
+    display: block;
+    margin-bottom: 50px;
+    font-size: 24px;
+    font-weight: 800;
+    line-height: 39.05px;
+  }
+
+  .section__slogan--section-four-satellite {
+    margin-left: 50px;
+  }
+
+  .section__text--section-four-iptv {
+    margin-left: 100px;
+  }
+
+  .section-four__list {
+    font-size: 18px;
+  }
+
+  .section-four__link {
+    width: 400px;
+  }
+
+  .section-four__link--satellite {
+    padding-left: 150px;
+  }
+  .section-four__link::before {
+    left: 110px;
+  }
+  .section-four__link--satellite::before {
+    left: 60px;
+  }
+
+  .section-four__link--satellite::after {
+    margin-left: 28px;
+    top: 20px;
+  }
+
+
+  //---------------------------------------------Desktop-Section-Five-------------------------------------------------------------------------------
+
+  .section-five {
+    background-image: none;
+    padding-top: 0;
+  }
+
+  .section-five__container {
+    min-height: 450px;
+    background-image: url("../../img/main-page/special-offers-desktop.png");
+    background-repeat: no-repeat;
+    background-position: 95% 70px;
+    padding-top: 130px;
+  }
+
+  .section__slogan--section-five {
+    text-align: left;
+    margin-left: 150px;
+    font-size: 51px;
+    padding-bottom: 30px;
+   }
+
+  .section__text--section-five {
+    width: 600px;
+    margin-left: 130px;
+    margin-bottom: 55px;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 30px;
+  }
+
+
+
+
+}
+
+
+
+
+
