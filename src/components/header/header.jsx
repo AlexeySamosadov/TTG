@@ -24,7 +24,7 @@ const Header = function () {
     <header className="header">
       <div className="header-wrapper">
         <div className="header__logo-container">
-          <a onClick={(evt)=>{
+          <a href="https://www.tvoetv.online" onClick={(evt)=>{
             evt.preventDefault();
           }} className="header__logo">
             {/*<picture>*/}
@@ -32,7 +32,7 @@ const Header = function () {
             <img className="header__logo-img" src={logo} alt="header-logo"/>
             {/*</picture>*/}
           </a>
-          <div onClick={showHideMenu} className="header__icon"/>
+          {/*<div onClick={showHideMenu} className="header__icon"/>*/}
         </div>
         <div className="header__menu">
           <a onClick={(evt)=>{

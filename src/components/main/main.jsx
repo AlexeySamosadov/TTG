@@ -1,15 +1,19 @@
 import React from "react";
 import "./main.less";
+import {ifSafari} from "../browserInfo/browserInfo";
 
+
+let sectionOneImageClass = ifSafari ? `section-one__image section-one__image--safari` : `section-one__image`;
+let sectionTwoMakeChoice = ifSafari ? `section-two__make-choice section-two__make-choice--safari` : `section-two__make-choice`;
 
 const Main = () => {
   return (
     <section className="main-page">
       <section className="section-one">
-        <div className='k'/>
+        <div className={sectionOneImageClass}/>
         <div className="section-one__description">
           <span className="section-one__slogan">ТВОЕ ТВ ОНЛАЙН - ПЕРВОЕ КАЧЕСТВЕННОЕ ТЕЛЕВИДЕНИЕ ЗА ГРАНИЦЕЙ ДЛЯ РУССКОЯЗЫЧНЫХ ЛЮДЕЙ</span>
-          <span className="section-one__text"> Смотрите 350 каналов на русском с IPTV интернет телевидением &quot;ТВОЁ ТВ&quot;. Дешевле конкурентов на 30%,FULL HD качество даже в удалённых уголках планеты.</span>
+          <span className="section-one__text"> Смотрите 350 каналов на русском с IPTV интернет телевидением &quot;ТВОЁ ТВ&quot;. Дешевле конкурентов на <span className="section-one__text-important">30%</span>, FULL HD качество даже в удалённых уголках планеты.</span>
           <span className="section-one__text-attention">Внимание! Мы не предоставляем услугу на территории Российской Федерации и в странах СНГ.</span>
           <button onClick={(evt)=>{
             evt.preventDefault();
@@ -23,7 +27,7 @@ const Main = () => {
             ТЕЛЕВИДЕНИЕ,</span>КОТОРЫМ УПРАВЛЯЕТЕ ВЫ
           </span>
           <span className="section__text section__text--section-two">Оставаться в прошлом с кабельными и эфирными каналами, антеннами и тарелками? Или стремительно войти в будущее, где есть IPTV-технология нового формата?</span>
-          <div className={`sectionTwoMakeChoice`}>
+          <div className={sectionTwoMakeChoice}>
             <span className="section__text section__text--make-choice">Сделай выбор с &quot;Твое тв онлайн&quot; - с нашим русским IPTV телевидением каждый зритель сам решает, когда и что смотреть!</span>
           </div>
           <span className="section__slogan" >
