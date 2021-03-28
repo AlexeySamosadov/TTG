@@ -28,17 +28,21 @@
 @background-before-iptv: linear-gradient(to right, #69a828 0%, #70cb10 100%);
 @background-before-satellite: linear-gradient(to right, #f02d58 0%, #bd0d17 100%);
 .header {
-  width: 100%;
-  display: flex;
-  flex-direction: row;
+  background-color: #f3f7ff;
   color: @font-color;
   font-weight: 400;
   font-family: "Open Sans", sans-serif;
+  z-index: 1;
+
+}
+
+.header-wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
   max-width :@tablet-width;
   margin: 0 auto;
   flex-wrap: wrap;
-  background-color: #f3f7ff;
-  z-index: 1;
   position: relative;
 }
 
@@ -250,11 +254,15 @@
 }
 @media (min-width: @tablet-width) {
   .header {
+
+  }
+
+  .header-wrapper {
+    width: 100%;
+    max-width: 1440px;
     position: relative;
     display: flex;
     flex-direction: row;
-    width: 100%;
-    max-width: @desktop-width;
   }
 
   .header__logo {
